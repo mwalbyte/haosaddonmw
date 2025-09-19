@@ -1,9 +1,8 @@
 FROM ghcr.io/gethomepage/homepage:latest
 
-# Voeg ons run script toe
-COPY run.sh /run.sh
-RUN chmod +x /run.sh \
-    && dos2unix /run.sh || true
+# Plaats run.sh in /app
+COPY run.sh /app/run.sh
+RUN chmod +x /app/run.sh
 
 # Start via run.sh
-CMD [ "/run.sh" ]
+CMD [ "/app/run.sh" ]
