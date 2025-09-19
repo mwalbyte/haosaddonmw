@@ -1,12 +1,12 @@
 name: Homepage
-version: "1.1.2"
+version: "1.1.4"
 slug: homepage
 description: "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard"
 arch:
   - amd64
   - aarch64
 map:
-  - addon_config:rw    # /path/to/config
+  - addon_config:rw
 environment:
   HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.254.135
 ports:
