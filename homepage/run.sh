@@ -1,1 +1,11 @@
-#!/usr/bin/with-contenv bashioset -eecho "[INFO] Setting up /app/config..."# Zorg dat /config bestaat (HA addon_config mount)mkdir -p /config# Link /config naar /app/config voor Homepagemkdir -p /apprm -rf /app/configln -s /config /app/configecho "[INFO] Starting Homepage..."exec /docker-entrypoint.sh
+#!/usr/bin/with-contenv bashio
+set -e
+
+# Zorg dat /config bestaat en link naar /app/config
+mkdir -p /config
+mkdir -p /app
+rm -rf /app/config
+ln -s /config /app/config
+
+# Start Homepage
+exec /docker-entrypoint.sh
