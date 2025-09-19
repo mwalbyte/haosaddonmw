@@ -11,5 +11,5 @@ ports:
   3000/tcp: 3000
 ports_description:
   3000/tcp: "Web interface port, default is 3000."
-url: "https://github.com/mw-bits/haos-gethomepage/tree/main/homepage"
+url: "https://github.com/mwalbyte/haosaddonmw/tree/main/homepage"
 panel_icon: "mdi:broadcast"
