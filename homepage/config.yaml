@@ -1,14 +1,11 @@
 name: Homepage
-version: "1.1.0"
+version: "1.1.1"
 slug: homepage
 description: "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard"
 arch:
   - amd64
   - aarch64
-map: [
-    "/data:app/config",
-    "/var/run/docker.sock",
-  ],
+map: addon_config:rw
 environment:
   HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.254.135
 ports:
