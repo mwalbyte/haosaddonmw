@@ -1,9 +1,11 @@
 #!/usr/bin/with-contenv bashio
+set -e
 
-# Link de addon config van HA naar wat je image verwacht
+echo "[INFO] Linking /config to /app/config..."
 mkdir -p /app
 rm -rf /app/config
 ln -s /config /app/config
 
-# Start de echte app (pas dit aan aan jouw base image)
-exec /init
+echo "[INFO] Starting Homepage..."
+# Start het originele entrypoint van de image
+exec /docker-entrypoint.sh
