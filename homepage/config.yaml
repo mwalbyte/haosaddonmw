@@ -6,7 +6,7 @@ arch:
   - amd64
   - aarch64
 environment:
-  HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.1.12
+  HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.254.135
 ports:
   3000/tcp: 3000
 ports_description:
