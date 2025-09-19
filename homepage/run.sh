@@ -1,9 +1,10 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bash
 set -e
 
+echo "[INFO] Setting up /app/config..."
+
 mkdir -p /config
-mkdir -p /app/config
 rm -rf /app/config
 ln -s /config /app/config
 
-exec /usr/local/bin/docker-entrypoint.sh
+# Laat de container doorgaan naar het originele entrypoint
