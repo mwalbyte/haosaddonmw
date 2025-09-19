@@ -4,15 +4,11 @@ slug: homepage
 description: "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard"
 arch:
   - amd64
-  - armhf
-  - armv7
   - aarch64
-  - i386
 environment:
   HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.1.12
 ports:
   3000/tcp: 3000
-map:
 ports_description:
   3000/tcp: "Web interface port, default is 3000."
 url: "https://github.com/mw-bits/haos-gethomepage/tree/main/homepage"
