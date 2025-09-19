@@ -1,7 +1,7 @@
 # wip for homepage from gethomepage as a addon
 # not working yet fixing the errors first
 
-
+![Version][version]
 
 -----------------------------------------------------------
 
@@ -21,7 +21,7 @@ Homepage / gethomepage
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 
-
+[version]: https://img.shields.io/badge/Version-1.0.0_BETA-red
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
