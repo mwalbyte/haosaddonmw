@@ -1,10 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/sh
 set -e
 
-# setup config
+echo "[INFO] Setting up /app/config..."
 mkdir -p /config
 rm -rf /app/config
 ln -s /config /app/config
+echo "[INFO] Homepage config linked. Ready for startup."
 
-# start originele container proces
+# Start het originele containerproces
 exec "$@"
