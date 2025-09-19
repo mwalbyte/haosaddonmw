@@ -6,8 +6,8 @@ arch:
   - amd64
   - aarch64
 map: [
-    "app/config:rw",
-    "/var/run/docker.sock:rw",
+    "/data:app/config",
+    "/var/run/docker.sock",
   ],
 environment:
   HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.254.135
