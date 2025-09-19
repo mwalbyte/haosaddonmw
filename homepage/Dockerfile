@@ -1,0 +1,1 @@
+FROM gethomepage/homepage:latest
