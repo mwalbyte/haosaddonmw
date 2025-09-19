@@ -1,4 +1,3 @@
-# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Home Assistant add-on mwalbyte
 url: 'https://github.com/mwalbyte/haosaddonmw'
 maintainer: Mwalbyte
