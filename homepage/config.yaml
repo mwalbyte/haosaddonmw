@@ -5,7 +5,8 @@ description: "A modern, fully static, fast, secure fully proxied, highly customi
 arch:
   - amd64
   - aarch64
-map: addon_config:rw
+map: 
+  - addon_config:rw
 environment:
   HOMEPAGE_ALLOWED_HOSTS: gethomepage.dev,192.168.254.135
 ports:
